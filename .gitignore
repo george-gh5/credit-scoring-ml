@@ -1,0 +1,24 @@
+# python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# pycharm/ide
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.DS_Store
+
+# jupyter
+.ipynb_checkpoints/
+
+# virtual env
+.venv/
+venv/
+env/
+
+# logs
+logs/
