@@ -11,3 +11,4 @@ catboost==1.2.8
 shap==0.50.0
 ipython==9.8.0
 jupyterlab==4.5.0
+pyarrow==22.0.0
