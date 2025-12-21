@@ -22,7 +22,15 @@ env/
 
 # logs
 logs/
+catboost_info/
 
 # data
 *.parquet
 data/processed/
+
+# models
+models/*
+!models/*.txt
+!models/*.json
+*.pkl
+*.joblib

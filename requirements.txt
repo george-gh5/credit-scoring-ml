@@ -12,3 +12,4 @@ shap==0.50.0
 ipython==9.8.0
 jupyterlab==4.5.0
 pyarrow==22.0.0
+joblib==1.5.2

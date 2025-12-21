@@ -1,0 +1,4 @@
+{
+    "imputer__strategy": "median",
+    "model__C": 0.1
+}
