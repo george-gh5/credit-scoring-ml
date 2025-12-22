@@ -31,5 +31,16 @@ def save_model_results(name, model, params, metrics):
         json.dump(metrics, f, indent=4)
 
 
-def make_submission():
-    """Генерация файла для Kaggle"""
+def display_results(models_path=MODELS_PATH):
+    """Таблица результатов"""
+    all_results = []
+    for file in models_path.glob("*_metrics.json"):
+        with open(file, 'r') as f:
+            res = json.load(f)
+            res['model_name'] = file.stem.replace('_metrics', '')
+            all_results.append(res)
+
+    df_results = pd.DataFrame(all_results).set_index('model_name')
+    df_results = df_results.sort_values(by='roc_auc', ascending=False)
+
+    return df_results

@@ -45,8 +45,8 @@ def lgb_model():
     return lgb.LGBMClassifier(
         class_weight='balanced',
         random_state=42,
-        # важность признаков
-        importance_type='gain'
+        importance_type='gain',  # важность признаков
+        verbosity=-1
     )
 
 
