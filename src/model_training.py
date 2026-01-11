@@ -28,6 +28,7 @@ def logreg_pipeline():
         ))
     ])
 
+
 def rf_pipeline():
     """Пайплайн для рандомного леса"""
     return Pipeline([
